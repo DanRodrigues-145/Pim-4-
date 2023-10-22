@@ -1,0 +1,41 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Registro de ponto</title>
+    </head>
+    
+    <body bgcolor="#4682B4">
+        <center>
+            <br>
+            <br>
+    
+                <h1> Slum System </h1>
+                <br>
+                <br>
+                <hr color="blue">
+                <br>
+                <br>
+                <p style="text-align:right"><img src="Logo usuario.png" width="30" height="35">                    Olá. Daniel Rodrigues. </p>
+                <br>
+                <h2>Para realizar o registro de ponto clique no botão abaixo:</h2>
+                <br>
+                <br>
+                <p id="hora">
+                    
+                </p>
+                
+                <a href="Ponto_sucesso.html"><button type="submit">Registrar Ponto</button></a>
+
+                <br>
+                <br>
+                <a href="Slum_inicial.html" ><button type="submit" >Voltar</button></body></a>
+        </center>
+        <script>
+
+            horario = new Date().getDate()+ "/" +( new Date().getMonth()+1)+ "/" + new Date().getUTCFullYear()+ "<br>" +new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
+
+
+            document.getElementById("hora").innerHTML = horario
+        </script>
+    </body>
+</html>

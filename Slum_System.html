@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login - RH - Slum System</title>        
+    </head>
+    <script>
+        function login(){
+            if(document.getElementById("usuario").value=="Daniel"){
+                window.location.href = "Slum_inicial.html";
+            }else{
+                document.getElementById("mensagem").innerHTML="Usuário não existe";
+            }
+            
+        }
+    </script>
+       <body bgcolor="#4682B4">
+        <center>
+        <br>
+        <br>
+
+            <h1> Slum System </h1>
+            <br>
+            <br>
+            <hr color="blue">
+            <br>
+            <br>
+            <h2>Login:</h2>
+            <p><b> Usuário: </b><input id="usuario" type=text name="usuario" size="25" maxlength="50"></p>
+            <p><b> Senha: </b><input type="password" name="senha" size="25" ></p>
+            <font color="red"><p id="mensagem"></p></font>
+            <br>
+            <hr color="blue">
+                <br>
+                
+                <br>
+
+                <button onclick="login()">Login</button>
+                <input type=reset value="Limpar">
+                <br>
+                <br>
+                <a href="Esqueci_minha_senha.html"><button>Esqueci minha senha</button></a>
+                                            
+            </center>
+    
+    </body>
+</html>
