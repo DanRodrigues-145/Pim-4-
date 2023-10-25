@@ -3,9 +3,12 @@
         <meta charset="UTF-8">
         <title>Login - RH - Slum System</title>        
     </head>
+    <link rel="stylesheet" href="css/Slum_Slum.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <script>
         function login(){
-            if(document.getElementById("usuario").value=="Daniel"){
+            if(document.getElementById("usuario").value=="daniel"){
                 window.location.href = "Slum_inicial.html";
             }else{
                 document.getElementById("mensagem").innerHTML="Usuário não existe";
@@ -13,7 +16,7 @@
             
         }
     </script>
-       <body bgcolor="#4682B4">
+       <body >
         <center>
         <br>
         <br>
@@ -21,24 +24,33 @@
             <h1> Slum System </h1>
             <br>
             <br>
-            <hr color="blue">
+            <hr>
             <br>
             <br>
-            <h2>Login:</h2>
-            <p><b> Usuário: </b><input id="usuario" type=text name="usuario" size="25" maxlength="50"></p>
-            <p><b> Senha: </b><input type="password" name="senha" size="25" ></p>
+            <img class="logo" src="SlumLogo.png" alt="Logo">
+            <br>
+            <br>
+            <div class="input">
+                <b class="rotulo"> Usuário: </b>
+                <input id="usuario" type=text name="usuario" size="25" maxlength="50">
+            </div>
+            <div class="input">
+                <b class="rotulo"> Senha: </b>
+                <input type="password" name="senha" size="25" >
+            </div>
+            <br>
             <font color="red"><p id="mensagem"></p></font>
             <br>
-            <hr color="blue">
+            <hr>
                 <br>
                 
                 <br>
 
-                <button onclick="login()">Login</button>
-                <input type=reset value="Limpar">
+                <button class="custom-btn btn-1" onclick="login()">Login</button>
+                
+                <button class="custom-btn btn-1 maior" onclick="location.href='Esqueci_minha_senha.html';">Esqueci minha senha</button>
                 <br>
-                <br>
-                <a href="Esqueci_minha_senha.html"><button>Esqueci minha senha</button></a>
+
                                             
             </center>
     

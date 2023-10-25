@@ -1,0 +1,58 @@
+body{
+    background-color: #6bcbed;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+hr{
+    border-color: #3981a4
+}
+input{
+    width: 160px;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-1 {
+    background: rgb(52 112 147);
+    background: linear-gradient(0deg, rgb(52 112 147) 0%, rgb(35 96 132) 100%);
+    border: none;
+  }
+  .btn-1:hover {
+     background: rgb(35 96 132);
+     background: linear-gradient(0deg, rgba(35 96 132) 0%, rgb(40 149 194) 100%);
+  }
+  .maior{
+    width: 180px;
+  }
+  .rotulo{
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+    margin-bottom:10px;
+  }
+  .logo{
+    width: 150px;
+  }
+.sair{
+    background: #dd0703;
+    background: linear-gradient(0deg, #dd0703 0%, #b50400 100%);
+    
+}
+.sair:hover{
+    background: linear-gradient(0deg, #dd0703 0%, rgb(35 96 132) 100%);
+}
