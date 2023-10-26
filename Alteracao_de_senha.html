@@ -2,7 +2,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Alteração de senha</title>
-    </head><body bgcolor="#4682B4"> 
+        <link rel="stylesheet" href="css/Slum_Slum.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    
+    </head>
+    <body bgcolor="#4682B4"> 
         <center><br>
             <br>
     
@@ -19,14 +24,21 @@
                 <h3>Informe a nova senha:</h3>
                 <br>
                 <br>
-                <p><b>Senha: </b><input type="password" name="senha" size="25"></p>
+
+                <div class="input">
+                    <b class="rotulo"> Senha: </b>
+                    <input id="usuario" type=text name="senha" size="25">
+                </div>
+                <div class="input">
+                    <b class="rotulo"> Confirmação:  </b>
+                    <input type="password" name="confirmaSenha" size="25" >
+                </div>
+
                 <br>
-                <p><b>Confirmação: </b><input type="password" name="senha" size="25"></p>
-                <br>
-                <a href="Sucesso.html" ><button type='submit'>Salvar</button></a>
+                <button class="custom-btn btn-1 maior" class="custom-btn btn-1 maior" onclick="location.href='Sucesso.html'">Salvar</button>
                 <br>
                 <br>
-                <a href="Slum_System.html" ><button type='submit'>Voltar</button></a>
+                <button class="custom-btn btn-1 maior" class="custom-btn btn-1 maior" onclick="location.href='Slum_System.html'">Voltar</button>
         </center>
         </body>
 </html>

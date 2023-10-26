@@ -2,9 +2,14 @@
     <meta charset="UTF-8">
     <head>
         <title>Solicitação de apoio ao RH</title>
+        <link rel="stylesheet" href="css/Slum_Slum.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+
     </head>
     
     <body bgcolor="#4682B4">
+        
         <center>
             <br>
             <br>
@@ -16,20 +21,22 @@
                 <br>
                 <p style="text-align:right"><img src="Logo usuario.png" width="30" height="35">                    Olá. Daniel Rodrigues. </p>
                 <br>
-        </center>
-        <br>
         <h1>Olá, como podemos ajudar ?</h1>
-        <br>
         <br>
         <h2>Por favor descreva abaixo sua solicitação:</h2>
         <br>
-        <br>
-        <p><textarea name="Solicitacao" rows="15" cols="50">Digite aqui... </textarea>
+        <p><textarea id="solicitacao" name="Solicitacao" rows="15" cols="50">Digite aqui... </textarea>
         <br>
         <br> 
-        <a href="Enviada.html"> <button>     Enviar     </button> </a>
-        <input type=reset value="Limpar"></p>
+        <button class="custom-btn btn-1" onclick="location.href='Enviada.html'">     Enviar     </button> 
+        <button class="custom-btn btn-1" onclick="limpar()" type=reset>Limpar</button>
         <br>
-        <center><a href="Slum_inicial.html" ><button type='submit'>Voltar</button></a></center>
+        <br>
+        <button  class="custom-btn btn-1 sair" onclick="location.href='Slum_inicial.html'">Voltar</button></center>
+        <script>
+            function limpar(){
+                document.getElementById("solicitacao").innerHTML="";
+            }
+        </script>
     </body>
 </html>
